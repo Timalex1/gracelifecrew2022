@@ -32,6 +32,7 @@ registerBtn.addEventListener('click', (event) => {
 
     //get form data and validate it
     let name = document.getElementById('name').value
+    let email = document.getElementById('email').value
     let phoneNumber = document.getElementById('phonenumber').value
     let gender = document.getElementById('gender').value
     let invitedBy = document.getElementById('invitedBy').value
@@ -41,6 +42,7 @@ registerBtn.addEventListener('click', (event) => {
 
     function clearField() {
         document.getElementById('name').value = ''
+        document.getElementById('email').value = ''
         document.getElementById('phonenumber').value = ''
         document.getElementById('invitedBy').value = ''
         document.getElementById('stateFrom').value = ''
@@ -54,6 +56,7 @@ registerBtn.addEventListener('click', (event) => {
 
         set(ref(database, 'attendants/' + name), {
             name: name,
+            email: email,
             number: number,
             gender: gender,
             invitedBy: invitedBy,
@@ -70,10 +73,10 @@ registerBtn.addEventListener('click', (event) => {
     }
 
     //check for not-null values
-    let checked = name != null && name != "" && phoneNumber != null && phoneNumber != "" && gender != null && gender != "" && invitedBy != null && invitedBy != "" && stateFrom != null && stateFrom != "" & stateTo != null && stateTo != ""
+    let checked = name != null && name != "" && email != null && email != "" && phoneNumber != null && phoneNumber != "" && gender != null && gender != "" && invitedBy != null && invitedBy != "" && stateFrom != null && stateFrom != "" & stateTo != null && stateTo != ""
 
     if (checked) {
-        writeUserData(name, phoneNumber, gender, invitedBy, stateFrom, stateTo)
+        writeUserData(name, email, phoneNumber, gender, invitedBy, stateFrom, stateTo)
 
         //show alert success
         const alertSuccess = document.getElementById('success');

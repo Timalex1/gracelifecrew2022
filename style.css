@@ -14,10 +14,16 @@ h1 {
 }
 
 .navbar {
-    background-color: #2f5689;
+    background-color: #fff;
     display: flex;
     align-items: center;
     color: #fff;
+}
+
+.navbar-toggler span:hover {
+    /* stroke: rgba(0, 0, 0, 0.5);
+    background-color: #fff; */
+    color: #2f5689 !important;
 }
 
 .navbar-brand {
@@ -30,15 +36,15 @@ h1 {
     letter-spacing: .1em;
     line-height: 1.4em;
     text-transform: uppercase;
-    color: #fff;
+    color: #2f5689;
 }
 
 .navbar>ul {
-    color: #fff;
+    color: #2f5689;
 }
 
 .navbar ul a {
-    color: #fff;
+    color: #2f5689;
     letter-spacing: .1em;
     text-transform: uppercase;
 }
@@ -181,6 +187,7 @@ h1 {
     font-family: 'Fjalla One', sans-serif;
     color: #2f5689;
     cursor: pointer;
+    background-color: #fc9d00;
 }
 
 .socials-heading a:hover {
@@ -231,4 +238,14 @@ h1 {
 
 .reg-footer #footer-note {
     color: #fff !important;
+}
+
+@media (max-width: 576px) {
+    .navbar-brand>strong {
+        font-size: small;
+    }
+
+    .hero-img>img {
+        width: 100%;
+    }
 }
