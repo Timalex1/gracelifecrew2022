@@ -1,0 +1,234 @@
+* {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    color: #2f5689 !important;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.navbar {
+    background-color: #2f5689;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.navbar-brand {
+    display: flex !important;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-brand>strong {
+    letter-spacing: .1em;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar>ul {
+    color: #fff;
+}
+
+.navbar ul a {
+    color: #fff;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.navbar ul a:hover {
+    color: #fc9d00;
+    text-decoration: underline;
+}
+
+.hero-section {
+    position: relative;
+    min-height: 50vh;
+    /* background-color: #fc9d00; */
+    padding-block: 2rem;
+    background-image: url('https://converge.org/images/librariesprovider12/events/converge-unleash-bckgrnd-web.jpg?sfvrsn=9736e90b_0');
+    background-size: cover;
+    z-index: 0;
+}
+
+.hero-section-background-mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .65);
+    z-index: -1;
+}
+
+.hero-section-content {
+    z-index: 2;
+}
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img img {
+    width: 70%;
+    margin-top: 2rem;
+}
+
+.hero-section p {
+    font-weight: lighter;
+    font-size: 2vw;
+    color: #fff;
+}
+
+.hero-section button {
+    border: none;
+    background-color: #2f5689;
+    color: #fff;
+    padding: 1rem 4rem;
+    border-radius: 100px;
+}
+
+.hero-section button:hover {
+    background-color: #2f5689cc;
+}
+
+.countdown-section {
+    position: fixed !important;
+    z-index: 99;
+    bottom: 10px;
+    right: 0;
+
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.countdown-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fc9d00;
+    border-radius: 50%;
+    padding: 2rem;
+    height: 50px;
+    width: 50px;
+}
+
+.countdown-container h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+.countdown-container span {
+    font-size: .6vw;
+}
+
+/* Greetings section */
+.greetings {
+    padding-block: 3em;
+}
+
+.greetings p {
+    color: gray;
+}
+
+.greetings .greetings-image img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.greetings .greetings-image h1 {
+    /* font-size: larger; */
+    color: rgba(0, 0, 0, 0.802);
+    text-align: center;
+}
+
+.greetings hr {
+    background: #fc9d00;
+    height: .1em;
+}
+
+/* socials and pictures */
+.socials-instagram {
+    padding-block: 3em;
+}
+
+.socials-heading h1 {
+    text-align: center;
+}
+
+.socials-heading a {
+    font-family: 'Fjalla One', sans-serif;
+    color: #2f5689;
+    cursor: pointer;
+}
+
+.socials-heading a:hover {
+    color: #fff !important;
+    background-color: #fc9d00;
+}
+
+/* .social-post { */
+/* width: 200px;
+    height: 200px; */
+/* } */
+
+.registration-section {
+    min-height: 50vh;
+    padding-block: 5vh;
+    margin-block: 3rem;
+}
+
+.registration-section h1 {
+    margin-bottom: 20px;
+}
+
+.form-block {
+    padding-inline: 0em;
+}
+
+.form-block hr {
+    background-color: #fc9d00;
+}
+
+.form-block button {
+    border: none;
+    background-color: #2f5689;
+    color: #fff;
+    padding: 1rem 4rem;
+    border-radius: 100px;
+}
+
+.form-block button:hover {
+    background-color: #2f5689cc;
+}
+
+.reg-footer {
+    padding-top: 2rem;
+    min-height: 20vh;
+    background-color: #2f5689;
+}
+
+.reg-footer #footer-note {
+    color: #fff !important;
+}
