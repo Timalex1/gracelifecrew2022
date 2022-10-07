@@ -268,4 +268,12 @@ h1 {
     .hero-section p {
         font-size: 20px;
     }
+
+    .countdown-container h1 {
+        font-size: larger;
+    }
+
+    .countdown-container span {
+        font-size: 2vw;
+    }
 }
