@@ -21,7 +21,7 @@ h1 {
 }
 
 .navbar-toggler-icon {
-    background-image: ;
+    /* background-image:  */
 }
 
 .navbar-brand {
@@ -172,6 +172,24 @@ h1 {
     height: .1em;
 }
 
+#colorsLink {
+    animation: blinking 3s linear infinite;
+}
+
+@-webkit-keyframes blinking {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
 /* socials and pictures */
 .socials-instagram {
     padding-block: 3em;
@@ -245,5 +263,9 @@ h1 {
 
     .hero-img>img {
         width: 100%;
+    }
+
+    .hero-section p {
+        font-size: 20px;
     }
 }
