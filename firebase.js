@@ -29,17 +29,6 @@ registerBtn.addEventListener('click', (event) => {
     // Initialize Realtime Database and get a reference to the service
     const database = getDatabase(app);
 
-    function writeUserData(name, number, gender, invitedBy, from, to) {
-        set(ref(database, 'attendants/' + name), {
-            name: name,
-            number: number,
-            gender: gender,
-            invitedBy: invitedBy,
-            from: from,
-            to: to,
-            createdAt: new Date()
-        });
-    }
 
     //get form data and validate it
     let name = document.getElementById('name').value
@@ -50,13 +39,54 @@ registerBtn.addEventListener('click', (event) => {
     let stateTo = document.getElementById('stateTo').value
 
 
+    function clearField() {
+        document.getElementById('name').value = ''
+        document.getElementById('phonenumber').value = ''
+        document.getElementById('invitedBy').value = ''
+        document.getElementById('stateFrom').value = ''
+        document.getElementById('stateTo').value = ''
+    }
+
+
+    function writeUserData(name, number, gender, invitedBy, from, to) {
+
+        registerBtn.setAttribute('disabled', 'disabled')
+
+        set(ref(database, 'attendants/' + name), {
+            name: name,
+            number: number,
+            gender: gender,
+            invitedBy: invitedBy,
+            from: from,
+            to: to,
+            createdAt: new Date()
+        })
+            .then(() => {
+                registerBtn.removeAttribute('disabled')
+            })
+            .catch(() => {
+                registerBtn.removeAttribute('disabled')
+            })
+    }
+
     //check for not-null values
     let checked = name != null && name != "" && phoneNumber != null && phoneNumber != "" && gender != null && gender != "" && invitedBy != null && invitedBy != "" && stateFrom != null && stateFrom != "" & stateTo != null && stateTo != ""
 
     if (checked) {
-        console.log("Passed!!");
-    }
+        writeUserData(name, phoneNumber, gender, invitedBy, stateFrom, stateTo)
 
-    writeUserData(name, phoneNumber, gender, invitedBy, stateFrom, stateTo)
+        //show alert success
+        const alertSuccess = document.getElementById('success');
+        alertSuccess.removeAttribute('style')
+
+        //clear input field
+        clearField()
+    }
+    else {
+
+        //show alert danger
+        const alertDanger = document.getElementById('danger');
+        alertDanger.removeAttribute('style')
+    }
 
 })
