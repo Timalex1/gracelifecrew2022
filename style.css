@@ -20,10 +20,8 @@ h1 {
     color: #fff;
 }
 
-.navbar-toggler span:hover {
-    /* stroke: rgba(0, 0, 0, 0.5);
-    background-color: #fff; */
-    color: #2f5689 !important;
+.navbar-toggler-icon {
+    background-image: ;
 }
 
 .navbar-brand {
