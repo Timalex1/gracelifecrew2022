@@ -82,7 +82,7 @@ registerBtn.addEventListener('click', (event) => {
         const alertSuccess = document.getElementById('success');
         alertSuccess.removeAttribute('style')
 
-        setTimeout(() => { window.location.reload() }, 2000)
+        // setTimeout(() => { window.location.reload() }, 2000)
 
         //clear input field
         clearField()
