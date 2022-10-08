@@ -1,7 +1,11 @@
 * {
     font-family: Montserrat;
-    margin: 0;
-    padding: 0;
+
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
 }
 
 li {
@@ -109,7 +113,8 @@ h1 {
     position: fixed !important;
     z-index: 99;
     bottom: 10px;
-    right: 0;
+    right: 25%;
+    left: 25%;
 
 }
 
@@ -149,7 +154,11 @@ h1 {
 
 /* Greetings section */
 .greetings {
-    padding-block: 3em;
+    padding-block: 1.5em;
+}
+
+.greetings h1 {
+    text-align: center;
 }
 
 .greetings p {
@@ -158,7 +167,6 @@ h1 {
 
 .greetings .greetings-image img {
     width: 100%;
-    margin-bottom: 20px;
 }
 
 .greetings .greetings-image h1 {
@@ -177,7 +185,7 @@ h1 {
     color: #fff;
     border: 1px solid #000;
     padding: 5px 25px;
-    font-size: 30px;
+    font-size: 3px;
     border-radius: 10px;
     text-decoration: none;
 }
@@ -188,7 +196,7 @@ h1 {
 
 /* socials and pictures */
 .socials-instagram {
-    padding-block: 1em;
+    padding-block: 0em;
 }
 
 .socials-heading h1 {
@@ -214,7 +222,6 @@ h1 {
 
 .registration-section {
     min-height: 50vh;
-    padding-block: 5vh;
     margin-block: 3rem;
 }
 
@@ -252,13 +259,27 @@ h1 {
     color: #fff !important;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 820px) {
+
+    h1 {
+        text-align: center;
+        font-size: 1.5rem
+    }
+
+    button {
+        margin: 0;
+    }
+
+    .form-block button {
+        padding: 16px 32px 17px;
+    }
+
     .navbar-brand>strong {
         font-size: small;
     }
 
     .hero-img>img {
-        width: 100%;
+        width: 80%;
     }
 
     .hero-section p {
@@ -274,11 +295,28 @@ h1 {
     }
 
     #colorsLink {
-        font-size: medium;
+        font-size: small;
         padding: 10px 25px;
     }
 
-    #colorsLink>img {
-        /* width: 20px; */
+    .reg-footer {
+        margin-block: 10px;
+        min-height: auto;
+    }
+
+    #footer-after {
+        margin-top: 50px;
+    }
+
+    .hero-section-content {
+        margin-top: 50px;
+    }
+
+    .countdown-wrapper {
+        right: 10%;
+    }
+
+    .greetings p {
+        font-size: .5rem;
     }
 }
