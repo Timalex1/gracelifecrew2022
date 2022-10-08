@@ -173,21 +173,16 @@ h1 {
 }
 
 #colorsLink {
-    animation: blinking 3s linear infinite;
+    background-color: #2f5689;
+    color: #fff;
+    padding: 5px 25px;
+    font-size: 30px;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
-@-webkit-keyframes blinking {
-    0% {
-        opacity: 1.0;
-    }
-
-    50% {
-        opacity: 0.0;
-    }
-
-    100% {
-        opacity: 1.0;
-    }
+#colorsLink:hover {
+    background-color: #2f5689ca;
 }
 
 /* socials and pictures */
