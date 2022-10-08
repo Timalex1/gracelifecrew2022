@@ -181,10 +181,10 @@ h1 {
 }
 
 #colorsLink {
-    background-color: #fc9d00;
+    background-color: #00fc47;
     color: #fff;
-    border: 1px solid #000;
-    padding: 5px 25px;
+    /* border: .3px solid #000; */
+    /* padding: 5px 25px; */
     font-size: 3px;
     border-radius: 10px;
     text-decoration: none;
@@ -294,9 +294,13 @@ h1 {
         font-size: 2vw;
     }
 
+    .socials-heading h1 {
+        line-height: 1em;
+    }
+
     #colorsLink {
-        font-size: small;
-        padding: 10px 25px;
+        font-size: 10px;
+        padding: 5px 15px;
     }
 
     .reg-footer {
