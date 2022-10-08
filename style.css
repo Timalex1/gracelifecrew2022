@@ -173,8 +173,9 @@ h1 {
 }
 
 #colorsLink {
-    background-color: #2f5689;
+    background-color: #fc9d00;
     color: #fff;
+    border: 1px solid #000;
     padding: 5px 25px;
     font-size: 30px;
     border-radius: 10px;
@@ -187,7 +188,7 @@ h1 {
 
 /* socials and pictures */
 .socials-instagram {
-    padding-block: 3em;
+    padding-block: 1em;
 }
 
 .socials-heading h1 {
@@ -270,5 +271,14 @@ h1 {
 
     .countdown-container span {
         font-size: 2vw;
+    }
+
+    #colorsLink {
+        font-size: medium;
+        padding: 10px 25px;
+    }
+
+    #colorsLink>img {
+        /* width: 20px; */
     }
 }
