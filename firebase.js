@@ -51,7 +51,7 @@ registerBtn.addEventListener('click', (event) => {
     }
 
 
-    function writeUserData(name, number, gender, invitedBy, from, to) {
+    function writeUserData(name, email, number, gender, invitedBy, from, to) {
 
         registerBtn.setAttribute('disabled', 'disabled')
 
