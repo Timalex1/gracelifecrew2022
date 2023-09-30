@@ -86,10 +86,10 @@ h1 {
     align-items: center;
 }
 
-.hero-img img {
+/* .hero-img img {
     width: 70%;
     margin-top: 2rem;
-}
+} */
 
 .hero-section p {
     font-weight: lighter;
@@ -252,8 +252,8 @@ h1 {
 }
 
 .reg-footer {
-    padding-top: 2rem;
-    min-height: 20vh;
+    padding-block: 1rem;
+    /* min-height: 20vh; */
     background-color: #2f5689;
 }
 
