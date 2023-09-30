@@ -25,14 +25,12 @@ let secondHTML = document.getElementById('secondsCount')
 dayHTML.innerHTML = day
 hourHTML.innerHTML = hour
 minuteHTML.innerHTML = minute
-secondHTML.innerHTML = second
-
-let myTimer;
+secondHTML.innerHTML = second   
 
 //immediately start the count down timer for clock
 function startTimer() {
 
-    myTimer = setInterval(() => {
+   let myTimer = setInterval(() => {
 
         //decrement seconds by 1 every 1second
         secondHTML.innerHTML = --second
@@ -69,17 +67,17 @@ function startTimer() {
 
     }, 1000);
 
+    function stopIntervalCount() {
+        clearInterval(myTimer)
+    
+        //set the time to 0
+        dayHTML.innerHTML = 0
+        hourHTML.innerHTML = 0
+        minuteHTML.innerHTML = 0
+        secondHTML.innerHTML = 0
+    }
 }
 
-function stopIntervalCount() {
-    clearInterval(myTimer)
-
-    //set the time to 0
-    dayHTML.innerHTML = 0
-    hourHTML.innerHTML = 0
-    minuteHTML.innerHTML = 0
-    secondHTML.innerHTML = 0
-}
 
 //start timer on function call
 startTimer();
