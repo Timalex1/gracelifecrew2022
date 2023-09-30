@@ -38,6 +38,7 @@ registerBtn.addEventListener('click', (event) => {
     let invitedBy = document.getElementById('invitedBy').value
     let stateFrom = document.getElementById('stateFrom').value
     let stateTo = document.getElementById('stateTo').value
+    let year = new Date().getFullYear();
 
 
     function clearField() {
@@ -54,7 +55,7 @@ registerBtn.addEventListener('click', (event) => {
 
         registerBtn.setAttribute('disabled', 'disabled')
 
-        set(ref(database, 'attendants/' + name), {
+        set(ref(database, '2023GLC/' + name), {
             name: name,
             email: email,
             number: number,
@@ -62,7 +63,7 @@ registerBtn.addEventListener('click', (event) => {
             invitedBy: invitedBy,
             from: from,
             to: to,
-            createdAt: new Date()
+            createdAt: new Date().getFullYear()
         })
             .then(() => {
                 registerBtn.removeAttribute('disabled')
