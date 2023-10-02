@@ -56,25 +56,25 @@ h1 {
     text-decoration: underline;
 }
 
-.hero-section {
+/* .hero-section {
     position: relative;
     min-height: 50vh;
-    /* background-color: #fc9d00; */
+    background-color: #fc9d00;
     padding-block: 2rem;
     background-image: url('https://converge.org/images/librariesprovider12/events/converge-unleash-bckgrnd-web.jpg?sfvrsn=9736e90b_0');
     background-size: cover;
     z-index: 0;
-}
+} */
 
-.hero-section-background-mask {
+/* .hero-section-background-mask {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, .65);
+    background-color: #04070c;
     z-index: -1;
-}
+} */
 
 .hero-section-content {
     z-index: 2;
@@ -86,15 +86,15 @@ h1 {
     align-items: center;
 }
 
-/* .hero-img img {
-    width: 70%;
-    margin-top: 2rem;
-} */
+    .hero-img img {
+        width: 100%;
+        /* margin-top: 2rem; */
+    }
 
 .hero-section p {
-    font-weight: lighter;
+    font-weight: bolder;
     font-size: 2vw;
-    color: #fff;
+    color: #0c1421;
 }
 
 .hero-section button {
@@ -280,9 +280,9 @@ h1 {
         font-size: small;
     }
 
-    .hero-img>img {
+    /* .hero-img>img {
         width: 80%;
-    }
+    } */
 
     .hero-section p {
         font-size: 20px;
@@ -315,7 +315,7 @@ h1 {
     }
 
     .hero-section-content {
-        margin-top: 50px;
+        margin-top: 10px;
     }
 
     .countdown-wrapper {
