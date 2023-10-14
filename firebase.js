@@ -62,6 +62,14 @@ var datetime = "Last Sync: " + currentdate.getDate() + "/"
 
         registerBtn.setAttribute('disabled', 'disabled')
 
+        var currentdate = new Date(); 
+var datetime = "Last Sync: " + currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " @ "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+
         set(ref(database, '2023GLC/' + name), {
             name: name,
             email: email,
@@ -70,7 +78,7 @@ var datetime = "Last Sync: " + currentdate.getDate() + "/"
             invitedBy: invitedBy,
             from: from,
             to: to,
-            createdAt: new Date().getFullYear()
+            createdAt: datetime
         })
             .then(() => {
                 registerBtn.removeAttribute('disabled')
