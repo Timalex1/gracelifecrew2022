@@ -38,7 +38,14 @@ registerBtn.addEventListener('click', (event) => {
     let invitedBy = document.getElementById('invitedBy').value
     let stateFrom = document.getElementById('stateFrom').value
     let stateTo = document.getElementById('stateTo').value
-    let year = new Date().getFullYear();
+    var currentdate = new Date(); 
+var datetime = "Last Sync: " + currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " @ "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+    let year = datetime;
 
 
     function clearField() {
