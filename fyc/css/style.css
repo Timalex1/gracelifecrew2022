@@ -186,7 +186,7 @@ h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 100px;
 }
 
 /*--------------------------------------------------------------
@@ -518,6 +518,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro h1 span {
   color: #f82249;
+}
+
+#intro img{
+  height: 200px;
+  width: 200px;
 }
 
 #intro p {
